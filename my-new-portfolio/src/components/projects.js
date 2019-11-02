@@ -13,6 +13,7 @@ justify-content: space-around;
     justify-content: center;
     width: 35%;
     height: 14vw;
+    border-radius: 20px;
     background: rgb(39, 77, 128);
     margin: 3%;
     text-align: center;
