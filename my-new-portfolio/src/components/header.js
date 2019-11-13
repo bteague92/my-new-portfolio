@@ -1,6 +1,7 @@
 import React from 'react';
-import './../images/BrandonPic.PNG';
+import Brandon from './../images/BrandonPic.PNG';
 import styled from "styled-components";
+import Resume from "./../images/Resume.pdf";
 
 const Container = styled.div`
 
@@ -12,35 +13,47 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid white;
     margin: 1vw 0 1vw 0;
+    padding: 0 0 3% 0;
     
     .profilePic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 2% auto;
-        width: 50%;
+        width: 100%;
 
         img{
-
+            margin: 4%;
+            padding: 0;
+            border-radius: 50%;
+            width: 40%;
         }
     }
     .name{
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
         h1{
-            font-size: 3vw;
-            margin: 0;
+            font-size: 4vw;
+            margin: 0 0 2% 0;
         }
         h2{
-            font-size: 2vw;
+            font-size: 2.5vw;
             margin: 0;
         }
         button{
-            margin: 2vw;
-            width: 18vw;
-            font-size: 1.5vw;
-            border-radius: 10px;
+            margin: 4vw 0 2vw 0;
+            width: 22vw;
+            font-size: 1.9vw;
+            border-radius: 15px;
+            background: aqua;
+            font-weight: 600;
         }
     }
 }
@@ -49,16 +62,19 @@ section{
 
 
 const Header = (props) => {
+
+
+
     return (
         <Container>
             <section>
                 <div className="profilePic">
-                    <img src="BrandonPic.PNG" alt="Picture" />
+                    <img src={Brandon} alt="Picture" />
                 </div>
                 <div className="name">
                     <h1>Brandon Teague</h1>
                     <h2>Full Stack Web Developer/Designer</h2>
-                    <button>Download Resume</button>
+                    <a href={Resume} target="_blank"><button>Download Resume</button></a>
                 </div>
             </section>
         </Container>
