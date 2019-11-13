@@ -12,7 +12,7 @@ import "./images/BrandonPic.PNG";
 function App() {
 
   return (
-    <div>
+    <div className="body">
       <NavBar />
       <Header />
       <About />

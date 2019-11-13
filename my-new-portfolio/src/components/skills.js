@@ -9,11 +9,12 @@ const Container = styled.div`
     .middleSectionTwo {
       .display(row, space-around, center);
       width: 80%;
-      background: rgb(39, 77, 128);
+      background: rgb(0, 50, 128);
       padding: 2vw;
-      margin: 2% 0;
-      box-shadow: -1.5vw 1.5vw 5px grey;
+      margin: 2% 0 5% 0;
+      box-shadow: -1.5vw 1.5vw 5px black;
       border-radius: 25px 0 0 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       
       .skills {
         color: white;
@@ -40,6 +41,7 @@ const Container = styled.div`
             .display(column, flex-start, flex-start);
             li {
               font-size: 2.1vw;
+              font-weight: 500;
             }
           }
         }
@@ -49,31 +51,31 @@ const Container = styled.div`
 `;
 
 const Skills = (props) => {
-    return (
-        <Container>
-            <div class="sectionRight">
-                <section id="skills" class="middleSectionTwo">
-                    <div class="skills">
-                        <div class="sectionHeader">
-                            <h2>Skills</h2>
-                        </div>
-                        <div class="sectionText">
-                            <ul>
-                                <li>Adobe Iluustrator</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                            </ul>
-                            <ul>
-                                <li>Preprocessors(LESS, SCSS, etc.)</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+  return (
+    <Container>
+      <div class="sectionRight">
+        <section id="skills" class="middleSectionTwo">
+          <div class="skills">
+            <div class="sectionHeader">
+              <h2>Skills</h2>
             </div>
-        </Container>
-    )
+            <div class="sectionText">
+              <ul>
+                <li>Adobe Iluustrator</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <ul>
+                <li>Preprocessors(LESS, SCSS, etc.)</li>
+                <li>JavaScript</li>
+                <li>React</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Container>
+  )
 }
 
 export default Skills;
