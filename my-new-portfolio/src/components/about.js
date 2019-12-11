@@ -43,12 +43,12 @@ const Container = styled.div`
 const About = (props) => {
   return (
     <Container>
-      <section class="middleSection">
-        <div id="aboutMe" class="aboutMe">
-          <div class="sectionHeader">
+      <section className="middleSection">
+        <div id="aboutMe" className="aboutMe">
+          <div className="sectionHeader">
             <h2>About Me</h2>
           </div>
-          <div class="sectionText">
+          <div className="sectionText">
             <p>
               I decided to persue a career as a web developer because I've always
               been interested in creating things and solving problems. I spent a

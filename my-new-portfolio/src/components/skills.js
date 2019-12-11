@@ -53,22 +53,26 @@ const Container = styled.div`
 const Skills = (props) => {
   return (
     <Container>
-      <div class="sectionRight">
-        <section id="skills" class="middleSectionTwo">
-          <div class="skills">
-            <div class="sectionHeader">
+      <div className="sectionRight">
+        <section id="skills" className="middleSectionTwo">
+          <div className="skills">
+            <div className="sectionHeader">
               <h2>Skills</h2>
             </div>
-            <div class="sectionText">
+            <div className="sectionText">
               <ul>
                 <li>Adobe Iluustrator</li>
                 <li>HTML</li>
                 <li>CSS</li>
+                <li>NodeJs</li>
+                <li>SQLite</li>
               </ul>
               <ul>
                 <li>Preprocessors(LESS, SCSS, etc.)</li>
                 <li>JavaScript</li>
                 <li>React</li>
+                <li>Redux</li>
+                <li>PostgreSQL</li>
               </ul>
             </div>
           </div>

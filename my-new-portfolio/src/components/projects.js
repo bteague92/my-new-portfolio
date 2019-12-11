@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from "styled-components";
 import Data from "./../data/data.js";
 import ProjectBox from "./projectBox.js"
+import axios from 'axios';
+// import DB from './../../../database/data/projects.db3';
 
 const ProjectHeader = styled.h1`
 display: flex;
@@ -25,7 +27,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 40%;
     border-radius: 20px;
     box-shadow: 1.5vw 1.5vw 5px black;
     background: rgb(0, 50, 128);
@@ -53,13 +55,29 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 `;
 
 const Projects = (props) => {
+
+    // const [projects, setProjects] = useState([]);
+
+    // useEffect(() => {
+    //     axios
+    //         .get()
+    //         .then((res) => {
+    //             console.log('this is res',res)
+    //         })
+    //         .catch((err) => {
+    //             console.log(err);
+    //         })
+    // }, [])
+
+
+
     return (
         <div>
             <ProjectHeader>PROJECTS:</ProjectHeader>
             <Container>
-                {Data.map(i => {
+                {DB.map(i => {
                     return(
-                        <ProjectBox techUsed={i.techUsed} name={i.name} teamSize={i.teamSize} description={i.decription} link={i.link} />
+                        <ProjectBox techUsed={i.techUsed} name={i.name} teamSize={i.teamSize} link={i.link} />
                     )
                 })}
             </Container >
